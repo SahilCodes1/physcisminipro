@@ -9,6 +9,7 @@ body {
 .wrapper{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .calculator {
     background-color: #f4f4f4;
@@ -59,4 +60,9 @@ body {
 }
 #trajectoryCanvas {
     border: 1px solid #ddd;
+}
+
+.visualizer, .calculator {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px; 
 }
